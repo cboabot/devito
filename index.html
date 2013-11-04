@@ -23,17 +23,29 @@
 	
 		<div data-role="content" data-theme="a">	
 			This is a load of it.
+
+
+		<div data-role="footer" data-id="foo1" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" class="ui-btn-active ui-state-persist">Home</a></li>
+					<li><a href="index2.html" class="ui-btn-active ui-state-persist">Page 2</a></li>
+					<li><a href="index2.html" class="ui-btn-active ui-state-persist">Page 3</a></li>
+					<li><a href="wishlist.html" class="ui-btn-active ui-state-persist">Wishlist</a></li>
+				</ul>
+			</div>
 		</div>
-
-
-	<div data-role="header" data-id="foo1" data-position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="index.html" class="ui-btn-active ui-state-persist">Home</a></li>
-				<li><a href="index2.html" class="ui-btn-active ui-state-persist">Page 2</a></li>
-				<li><a href="index2.html" class="ui-btn-active ui-state-persist">Page 3</a></li>
-				<li><a href="index2.html" class="ui-btn-active ui-state-persist">Page 4</a></li>
-			</ul>
+		<div data-role="collapsible-set" data-theme="a" data-content-theme="b">
+			<div data-role="collapsible">
+				<ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-them="b">
+					<li><a href="#wishMask" data-rel="popup" data-position-to="window" data-transition="fade">Item 1</a></li>
+					<li><a href="#name2" data-rel="popup" data-position-to="window" data-transition="fade">Item 2</a></li>
+					<li><a href="#name3" data-rel="popup" data-position-to="window" data-transition="fade">Item 3</a></li>
+				</ul>
+			</div>
+			<div data-role="popup" id="wishMask" data-overlay-theme="a" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-conpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images/basim.jpg" style="max-height:512px;">
+			</div>
 		</div>
 	</div>
 </div>
